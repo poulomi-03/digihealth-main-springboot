@@ -1,0 +1,220 @@
+/* footer outside universal starts */
+.footer-wrapper{
+    bottom: 0;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: #05445E;
+}
+
+.footer-wrapper h3{
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-elements div {
+    height: 100%;
+    width: 25%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+}
+/* footer outside universal ends */
+
+
+/* First div starts - footer-logo */
+
+.footer-elements .footer-logo {
+    width: 25%;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.footer-elements .footer-logo .logo{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+
+    gap: 20px;
+}
+
+.footer-logo .logo p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.footer-logo .logo img{
+    height: 30px;
+    width: 30px;
+}
+
+.footer-logo .logo span {
+    color: #75E6DA;
+}
+
+.footer-logo .newsletter{
+    width: 100%;
+    height: 25%;
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: center;
+    justify-content: start;
+
+    gap: 5px;
+}
+
+.footer-logo .newsletter p{
+    font-size: 18px;
+}
+
+.footer-logo .newsletter .content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: start;
+    justify-content: start;
+    font-size: 22px;
+    gap: 15px;
+}
+
+.footer-logo .newsletter .content input{
+    border-radius: 2px;
+}
+
+.footer-logo .social-icons{
+    width: 100%;
+    height: 15%;
+    font-size: 34px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+
+    gap: 3px;
+}
+
+.footer-logo .playstore{
+    gap: 25px;
+}
+
+.footer-logo .playstore img{
+    width: 50px;
+    height: 50px;
+}
+
+/* First div ends - footer-logo */
+
+/* Second and third div starts - user-links */
+
+.footer-elements .user-links{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+} 
+
+.footer-elements .user-links p{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.footer-elements .user-links ul{
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.footer-elements .user-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-elements .user-links ul li a:hover{
+    font-size: 21px;
+    color: #75E6DA;
+    transition: 0.5s;
+}
+
+/* Second and third div ends - user-links */
+
+
+/* fourth div starts - contact-form */
+.footer-wrapper .contact-form {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    /* border: 2px solid yellow; */
+}
+
+.footer-wrapper .contact-form p{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.footer-wrapper .contact-form form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+    justify-content: start;
+    gap: 10px;
+    /* border: 2px solid yellowgreen; */
+}
+
+.footer-wrapper .contact-form form input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.footer-wrapper .contact-form form button {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+/* fourth div ends - contact-form */
+
