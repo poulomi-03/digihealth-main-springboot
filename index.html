@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="styles/top-navbar/services.css">
     <link rel="stylesheet" href="styles/body-elements-wrapper/body-elements-wrapper.css">
     <link rel="stylesheet" href="styles/body-elements-wrapper/home-wrapper.css">
-    <link rel="stylesheet" href="styles/footer/footer.css">
+    <link rel="stylesheet" href="styles/body-elements-wrapper/site-basic-info.css">
     <link rel="stylesheet" href="styles/body-elements-wrapper/clients.css">
+    <link rel="stylesheet" href="styles/footer/footer.css">
     <!-- all linked css -->
 
     <!-- universal google fonts -->
@@ -65,8 +66,8 @@
                         <ul>
                             <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;">
                                 <li>
-                                    <p id="loginRegister">Login/Register</p>
                                     <p id="loginRegister">Register</p>
+                                    <p id="loginLink">Login</p>
                                 </li>
                             </i>
                         </ul>
@@ -112,16 +113,16 @@
 
     <!-- Login/Register Form starts -->
     <div class="login-form" id="loginForm">
-        <form action="" method="post">
+        <form action="php/register.php" method="post">
             <div class="login-form-title">
                 <p>Sign-Up</p>
                 <i id="closeForm" class="fa-regular fa-circle-xmark" style="color: #05445E;"></i>
             </div>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
-            <input type="text" placeholder="Your Phone">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Passowrd">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="text" name="email" placeholder="Your Email">
+            <input type="text" name="phone" placeholder="Your Phone">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confPassword" placeholder="Confirm Passowrd">
             <a href="">Already have account? Login here</a>
             <button>Sign-Up</button>
         </form>
@@ -180,26 +181,15 @@
                     <div class="slide">
                         <div class="slide-content">
                             <div class="img">
-                                <dotlottie-player class="lottie"
-                                    src="https://lottie.host/dd2fdd60-2a25-4402-9286-2d91846a093a/1oVuvbOSSb.json"
-                                    background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;"
-                                    loop autoplay></dotlottie-player>
-                            </div>
-                            <div class="text">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <div class="img">
                                 <dotlottie-player
                                     src="https://lottie.host/0d4d8575-ce25-4196-93fc-39a7448d4ce8/NPAmRBSBtv.json"
                                     background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;"
                                     loop autoplay></dotlottie-player>
                             </div>
                             <div class="text">
-
+                                <p>WE Healthcare Services provides comprehensive medical care.</p>
+                                <p id="typeWriter">Emphasizing
+                                    patient-centered treatment and innovative healthcare solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -212,7 +202,9 @@
                                     loop autoplay></dotlottie-player>
                             </div>
                             <div class="text">
-
+                                <p>WE Healthcare Services provides comprehensive medical care</p>
+                                <p>emphasizing
+                                    patient-centered treatment and innovative healthcare solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -221,11 +213,13 @@
                             <div class="img">
                                 <dotlottie-player
                                     src="https://lottie.host/a8d79492-b373-4a75-af00-cce84de292d4/aKff3IYyWJ.json"
-                                    background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop
-                                    autoplay></dotlottie-player>
+                                    background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;"
+                                    loop autoplay></dotlottie-player>
                             </div>
                             <div class="text">
-
+                                <p>WE Healthcare Services provides comprehensive medical care</p>
+                                <p>emphasizing
+                                    patient-centered treatment and innovative healthcare solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -238,7 +232,9 @@
                                     loop autoplay></dotlottie-player>
                             </div>
                             <div class="text">
-
+                                <p>WE Healthcare Services provides comprehensive medical care</p>
+                                <p>emphasizing
+                                    patient-centered treatment and innovative healthcare solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -247,6 +243,53 @@
             </div>
         </div>
         <!-- body-elements-wrapper ends -->
+
+        <!-- site-basic-info starts -->
+        <div class="site-basic-info">
+            <div class="content">
+                <div class="content-text">
+                    <i class="fa-solid fa-1 fa-beat" style="color: #fff;"></i>
+                </div>
+                <div class="content-img">
+                    <dotlottie-player src="https://lottie.host/0d4d8575-ce25-4196-93fc-39a7448d4ce8/NPAmRBSBtv.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-img">
+                    <dotlottie-player src="https://lottie.host/a8d79492-b373-4a75-af00-cce84de292d4/aKff3IYyWJ.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="content-text">
+                    <i class="fa-solid fa-2 fa-beat" style="color: #fff;"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-text">
+                    <i class="fa-solid fa-3 fa-beat" style="color: #fff;"></i>
+                </div>
+                <div class="content-img">
+                    <dotlottie-player src="https://lottie.host/3ad73178-5224-4a54-9351-7488bcca5c04/aEQWAtiTR6.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-img">
+                    <dotlottie-player src="https://lottie.host/200da68b-fc87-4482-b286-29adf956e9dc/oz15Bq6dFS.json"
+                        background="transparent" speed="1" style="width: 100%; height: 100%; z-index: -1;" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="content-text">
+                    <i class="fa-solid fa-4 fa-beat" style="color: #fff;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- site-basic-info ends -->
+
+
 
         <!-- clients slider starts -->
         <div class="clients">
@@ -354,7 +397,7 @@
 
     <!-- all linked scripts -->
     <script src="scripts/top-navbar/services.js"></script>
-    <script src="scripts/top-navbar/loginRegister.js"></script>
+    <script src="scripts/top-navbar/register.js"></script>
     <script src="scripts/body-elements-wrapper/body-elements-wrapper.js"></script>
     <script src="scripts/body-elements-wrapper/home-wrapper.js"></script>
     <script src="scripts/body-elements-wrapper/clients.js"></script>
