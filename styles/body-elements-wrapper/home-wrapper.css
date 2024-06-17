@@ -7,6 +7,7 @@
   align-content: center;
   justify-content: center;
   overflow: hidden;
+  /* margin-top: 2px; */
   /* position: absolute; */
   z-index: -1;
   /* border: 2px solid blue; */
@@ -24,65 +25,42 @@
   /* border: 2px solid yellowgreen; */
 }
 
-.home-wrapper .animation .slider {
+
+/* 
+.carousel-inner{
+  border: 2px solid rgb(0, 16, 0);
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  /* border: 3px solid green; */
 }
 
-.slide {
+.carousel-inner .carousel-item{
   width: 100%;
   height: 100%;
-  display: flex;
+}
+
+.carousel-inner .carousel-item img{
+  height: 100%;
   object-fit: cover;
-  background-size: contain;
-  /* border: 3px solid pink; */
-}
+  background-size: cover;
+} */
 
-.slide .slide-content {
-  height: 100%;
+.carousel {
+  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  animation: fadeIn 5s;
-  z-index: -2;
-  /* border: 3px solid pink; */
-}
-
-.slide .slide-content .img {
-  height: 100%;
-  width: 50%;
-  background: none;
-  animation: fadeIn 5s;
-  /* border: 3px solid green; */
-  z-index: -1;
-}
-
-.slide .slide-content .text {
-  height: 100%;
-  width: 50%;
+  max-width: 100%;
   overflow: hidden;
+}
+
+.carousel-inner {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  /* border: 5px solid violet; */
+  transition: transform 1s ease;
 }
 
-.slide .slide-content .text p{
-  font-size: 42px;
-  color: black;
-  font-weight: 400;
+.carousel-item {
+  min-width: 100%;
 }
 
-.slide .img {
+.carousel-item img {
   width: 100%;
-  height: 100%;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  display: block;
 }
