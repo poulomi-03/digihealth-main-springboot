@@ -24,11 +24,17 @@
     /* border: 1px solid blue; */
 }
 
+
 .content .content-text{
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
     /* border: 1px solid green; */
-    padding: 40px;
 }
 
 .content .content-text i{
@@ -41,5 +47,13 @@
     font-size: 32px;
     background-color: #05445E;
 }
+
+.content .content-text p{
+    font-size: 38px;
+    color: #000;
+    font-weight: 500;
+}
+
+
 
 
