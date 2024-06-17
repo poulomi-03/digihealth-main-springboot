@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
-    let slideInterval = setInterval(nextSlide, 8000); // Change slide every 3 seconds
+    let slideInterval = setInterval(nextSlide, 10000); // Change slide every 3 seconds
   
     function nextSlide() {
       slides[currentSlide].style.display = 'none';
@@ -9,4 +9,5 @@ document.addEventListener("DOMContentLoaded", function() {
       slides[currentSlide].style.display = 'block';
     }
   });
+  
   
