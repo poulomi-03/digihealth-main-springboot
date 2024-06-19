@@ -1,0 +1,135 @@
+.outer-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid red; */
+}
+
+
+/* left-nav starts */
+
+.outer-main .left-nav{
+    width: 20%;
+    height: 100%;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #05445E;
+    /* border: 3px solid black; */
+}
+
+.outer-main .left-nav div{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    padding-left: 25px;
+    transition: 1s;
+    cursor: pointer;
+    border-bottom: 1px solid #D4F1F4; 
+}
+
+.outer-main .left-nav div:hover{
+    background-color: #75E6DA;
+    color: #05445E;
+    transition: 1s;
+}
+
+.outer-main .left-nav div p{
+    font-size: 20px;
+}
+
+.outer-main .left-nav .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.outer-main .left-nav .logo img{
+    width: 20px;
+    height: 20px;
+}
+
+.outer-main .left-nav .logo p{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.outer-main .left-nav .logo span{
+    color: #75E6DA;
+}
+
+/* left-nav ends */
+
+
+/* right-nav starts */
+
+.outer-main .right-nav{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    position: fixed;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    align-content: start;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.outer-main .right-nav .top-nav{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    gap: 20px;
+    background-color: #05445E;
+    /* border-bottom: 1px solid #D4F1F4; */
+    border: 3px solid firebrick;
+
+}
+
+.outer-main .right-nav .top-nav .top-nav-search{
+    gap: 10px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    border-top-left-radius: 7px;
+}
+
+.outer-main .right-nav .top-nav input{
+    border-radius: 0;
+}
+
+.outer-main .right-nav .top-nav i{
+   margin-left: 10px;
+}
+
+.outer-main .right-nav select{
+    /* height: 40px; */
+    padding: 10px;
+    padding-right: 10px;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/* right-nav ends */

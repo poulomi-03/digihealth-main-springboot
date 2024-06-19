@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const carouselItems = document.querySelectorAll('.carousel-item');
   const totalItems = carouselItems.length;
   let currentIndex = 0;
-  const intervalTime = 4000; // Set the interval time to 1000 milliseconds (1 second)
+  const intervalTime = 5000; // Set the interval time to 1000 milliseconds (1 second)
 
   function showNextSlide() {
     currentIndex++;
