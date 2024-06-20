@@ -115,23 +115,26 @@
     <!-- top-navbar ends -->
 
 
-    <!-- Login/Register Form starts -->
+    <!-- Register Form starts -->
     <div class="login-form" id="loginForm">
         <form action="php/register.php" method="post">
             <div class="login-form-title">
                 <p>Sign-Up</p>
                 <i id="closeForm" class="fa-regular fa-circle-xmark" style="color: #05445E;"></i>
             </div>
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="text" name="email" placeholder="Your Email">
-            <input type="text" name="phone" placeholder="Your Phone">
-            <input type="password" name="password" placeholder="Password">
-            <input type="password" name="confPassword" placeholder="Confirm Passowrd">
-            <a href="">Already have account? Login here</a>
+            <div class="scroll">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email">
+                <input type="text" name="phone" placeholder="Your Phone">
+                <!-- <input type="text" name="phone" placeholder="Your Phone"> -->
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="confPassword" placeholder="Confirm Passowrd">
+            </div>
+                <a href="">Already have account? Login here</a>
             <button>Sign-Up</button>
         </form>
     </div>
-    <!-- Login/Register Form ends -->
+    <!-- Register Form ends -->
 
 
     <!-- services pop-up container starts -->
@@ -386,5 +389,3 @@
 </body>
 
 </html>
-<!--comment by poulomi-->
-<!--comment by suraj-->
