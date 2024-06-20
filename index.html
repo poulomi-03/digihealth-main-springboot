@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/universal-css-design/universal-css-design.css">
     <link rel="stylesheet" href="styles/top-navbar/top-navbar.css">
     <link rel="stylesheet" href="styles/top-navbar/register.css">
+    <link rel="stylesheet" href="styles/top-navbar/login.css">
     <link rel="stylesheet" href="styles/top-navbar/services.css">
     <link rel="stylesheet" href="styles/body-elements-wrapper/body-elements-wrapper.css">
     <link rel="stylesheet" href="styles/body-elements-wrapper/home-wrapper.css">
@@ -70,7 +71,7 @@
                         <ul>
                             <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;">
                                 <li>
-                                    <p id="loginRegister">Register</p>
+                                    <p id="registerLink">Register</p>
                                     <p id="loginLink">Login</p>
                                 </li>
                             </i>
@@ -116,7 +117,7 @@
 
 
     <!-- Register Form starts -->
-    <div class="login-form" id="loginForm">
+    <div class="login-form" id="registerForm">
         <form action="php/register.php" method="post">
             <div class="login-form-title">
                 <p>Sign-Up</p>
@@ -135,6 +136,30 @@
         </form>
     </div>
     <!-- Register Form ends -->
+
+
+    <!-- Login Form starts -->
+    <div class="login-form login" id="loginForm">
+        <form action="php/login.php" method="post">
+            <div class="login-form-title">
+                <p>Sign-In</p>
+                <i id="closeLoginForm" class="fa-regular fa-circle-xmark" style="color: #05445E;"></i>
+            </div>
+            <div class="scroll">
+                <input type="text" name="name" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+                <a href="">Don't have account? Register here</a>
+            <button>Sign-In</button>
+            <p>Login with</p>
+            <div class="icons">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </form>
+    </div>
+    <!-- Login Form ends -->
 
 
     <!-- services pop-up container starts -->
@@ -380,6 +405,7 @@
     <!-- all linked scripts -->
     <script src="scripts/top-navbar/services.js"></script>
     <script src="scripts/top-navbar/register.js"></script>
+    <script src="scripts/top-navbar/login.js"></script>
     <script src="scripts/body-elements-wrapper/body-elements-wrapper.js"></script>
     <script src="scripts/body-elements-wrapper/home-wrapper.js"></script>
     <script src="scripts/body-elements-wrapper/clients.js"></script>

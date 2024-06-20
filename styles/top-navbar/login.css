@@ -1,0 +1,34 @@
+.login form{
+    gap: 20px;
+}
+
+.login form p{
+    color: #05445E;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login form .icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+    /* border: 2px solid red; */
+} 
+
+.login form .icons i{
+    color: #05445E;
+    font-size: 32px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.login form .icons i:hover{
+    font-size: 33px;
+    color: #00aff0;
+    transition: 0.3s;
+    font-weight: 400;
+}
