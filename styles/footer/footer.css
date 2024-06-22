@@ -159,17 +159,19 @@
     flex-direction: column;
 }
 
-.footer-elements .user-links ul li a{
+
+.footer-elements .user-links ul li a {
+    transition: transform 0.5s, color 0.5s;
     text-decoration: none;
     color: #fff;
-    transition: 0.5s;
+    display: inline-block; /* Ensures the transform works properly */
 }
 
-.footer-elements .user-links ul li a:hover{
-    font-size: 20px;
+.footer-elements .user-links ul li a:hover {
+    transform: scale(1.2); /* Increases the size to 120% */
     color: #75E6DA;
-    transition: 0.5s;
 }
+
 
 /* Second and third div ends - user-links */
 
