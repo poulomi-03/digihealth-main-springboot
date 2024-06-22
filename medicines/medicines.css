@@ -203,9 +203,35 @@
     height: 25%;
     width: 75%;
     outline: none;
+    border: none;
     color: #fff;
     font-weight: 600;
     background-color: #05445E;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.content .add-to-cart{
+    background-color: #75E6DA;
+    color: #05445E;
+    transition: 0.2s;
+}
+
+.content .add-to-cart:hover{
+    background-color: #05445E;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.content .buy-now{
+    background-color: #05445E;
+}
+
+.content .buy-now:hover{
+    background-color: #75E6DA;
+    color: #05445E;
+    transition: 0.2s;
+    outline: none;
 }
 
 /* right-nav ends */
