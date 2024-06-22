@@ -1,10 +1,35 @@
-/* universal design starts */
-*{
+/* Universal design starts */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
+
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ee6262;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;  /* Scrollbar thumb color */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;  /* Optional: adds padding around thumb */
+}
+
+/* Scrollbar styles for Firefox */
+* {
+    scrollbar-width: thin;  /* "auto" or "thin" */
+    scrollbar-color: #05445E #f1f1f1;  /* thumb color and track color */
+}
+
+
+
+
 
 html, body{
     margin: 0;
