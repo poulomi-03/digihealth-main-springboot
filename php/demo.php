@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // Database configuration
 $servername = "localhost";
 $username = "root"; // Change this to your database username
@@ -27,30 +25,17 @@ if ($password !== $confPassword) {
     die("Passwords do not match.");
 }
 
-// Check if email already exists
-$sql = "SELECT email FROM registeredusers WHERE email = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("s", $email);
-$stmt->execute();
-$stmt->store_result();
-
-if ($stmt->num_rows > 0) {
-    // Email already registered, set session message and redirect to index.html
-    $stmt->close();
-    $conn->close();
-    header("Location: ../index.html");
-    exit();
-}
+// Hash the password for security
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
 // Prepare an SQL statement
 $sql = "INSERT INTO registeredusers (name, email, phone, password) VALUES (?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("ssss", $name, $email, $phone, $password);
+$stmt->bind_param("ssss", $name, $email, $phone, $hashedPassword);
 
 // Execute the statement
 if ($stmt->execute()) {
-    // Registration successful, set session message and redirect to index.html
-    header("Location: ../index.html");
+    echo "New record created successfully";
 } else {
     echo "Error: " . $stmt->error;
 }
@@ -59,3 +44,4 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
+
