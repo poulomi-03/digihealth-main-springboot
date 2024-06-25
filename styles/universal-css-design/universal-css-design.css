@@ -1,139 +1,97 @@
 /* Universal design starts */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
 }
 
 /* Scrollbar styles for WebKit browsers (Chrome, Safari) */
-/* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 12px;
-} */
+}
 
-/* *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #ee6262;
-} */
+}
 
-/* *::-webkit-scrollbar-thumb { */
-    /* background-color: #000000;  /* Scrollbar thumb color */
-    /* border-radius: 10px;
-    /* border: 3px solid #f1f1f1;  /* Optional: adds padding around thumb */
-/* } */
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;  /* Scrollbar thumb color */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;  /* Optional: adds padding around thumb */
+}
 
 /* Scrollbar styles for Firefox */
-/* * { */
-    /* scrollbar-width: thin;  /* "auto" or "thin" */
-    /* scrollbar-color: #05445E #f1f1f1;  /* thumb color and track color */
-/* } */
-
-
-
-
-
-html, body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "PT Sans", sans-serif;
-    overflow-x: hidden;
+* {
+    scrollbar-width: thin;  /* "auto" or "thin" */
+    scrollbar-color: #05445E #f1f1f1;  /* thumb color and track color */
 }
 
 
 
-p{
-    font-size: 24px;
-    font-weight: 300;
-    color: #fff;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  overflow-x: hidden;
 }
 
-ul{
-    list-style-type: none;
+p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
 }
 
-li{
-    float: left;
-    list-style: none;
-    font-family: "PT Sans", sans-serif;
+ul {
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    transition: 0.5s;
-    cursor: pointer;
+li {
+  float: left;
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
 }
 
-a:hover{
-    color: #75E6DA;
-    transition: 0.5s;
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-button{
-    border-radius: 3px;
-    background-color: #189AB4;
-    color: #000;
-    font-weight: 100;
+a:hover {
+  color: #75e6da;
+  transition: 0.5s;
 }
 
-input{
-    width: 250px;
-    height:35px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-left: 10px;
-    outline: 0;
-    outline-color: none;
-    border: none;
+button {
+  border-radius: 3px;
+  background-color: #189ab4;
+  color: #000;
+  font-weight: 100;
 }
 
-i{
-    cursor: pointer;
-    margin-right: 20px;
+input {
+  width: 250px;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+  outline: 0;
+  outline-color: none;
+  border: none;
 }
 
-i:hover{
-    color: #189AB4;
+i {
+  cursor: pointer;
+  margin-right: 20px;
 }
 
+i:hover {
+  color: #189ab4;
+}
 
 /* universal design ends */
-
-
-
-
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Popup content */
-.popup-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Close button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
