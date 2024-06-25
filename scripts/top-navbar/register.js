@@ -33,3 +33,7 @@ closeForm.addEventListener('click', function () {
         registerForm.style.display = 'block';
     }
 });
+
+
+
+
