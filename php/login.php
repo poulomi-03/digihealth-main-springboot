@@ -34,6 +34,7 @@ if ($stmt->num_rows > 0) {
     // Verify the password
     if ($password == $dbPassword) {
         // Password is correct, set session variables
+        // echo "You logged-in!";
         $_SESSION['email'] = $dbEmail;
         header("Location: ../index.html"); // Redirect to a welcome page or dashboard
     } else {
