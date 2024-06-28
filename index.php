@@ -83,12 +83,12 @@
                                   </ul>';
                         } else {
                             echo '<ul>
-                                    <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;">
                                         <li>
-                                            <p id="registerLink">Register</p>
-                                            <p id="loginLink">Login</p>
+                                            <p style="cursor:pointer;" id="registerLink">Register</p>
+                                            <li>
+                                            <p style="cursor:pointer;" id="loginLink">Login</p>
+                                            </li>
                                         </li>
-                                    </i>
                                   </ul>';
                         }
                         ?>
