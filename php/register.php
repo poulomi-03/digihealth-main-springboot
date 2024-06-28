@@ -38,7 +38,7 @@ if ($stmt->num_rows > 0) {
     // Email already registered, set session message and redirect to index.html
     $stmt->close();
     $conn->close();
-    header("Location: ../index.html");
+    header("Location: ../index.php");
     exit();
 }
 
@@ -50,7 +50,7 @@ $stmt->bind_param("ssss", $name, $email, $phone, $password);
 // Execute the statement
 if ($stmt->execute()) {
     // Registration successful, set session message and redirect to index.html
-    header("Location: ../index.html");
+    header("Location: ../index.php");
 } else {
     echo "Error: " . $stmt->error;
 }

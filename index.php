@@ -67,14 +67,31 @@
                             <li><a href="">Our clients</a></li>
                         </ul>
 
-                        <ul>
-                            <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;">
-                                <li>
-                                    <p id="registerLink">Register</p>
-                                    <p id="loginLink">Login</p>
-                                </li>
-                            </i>
-                        </ul>
+                        <?php
+                        session_start();
+                        if (isset($_SESSION['email'])) {
+                            echo '<ul>
+                                    <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;"></i>
+                                        <li id="userDropdown">
+                                            <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>
+                                            <ul id="userOptions">
+                                                <li><a href="profile.php">Your Profile</a></li>
+                                                <li><a href="php/logout.php">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                    
+                                  </ul>';
+                        } else {
+                            echo '<ul>
+                                    <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;">
+                                        <li>
+                                            <p id="registerLink">Register</p>
+                                            <p id="loginLink">Login</p>
+                                        </li>
+                                    </i>
+                                  </ul>';
+                        }
+                        ?>
 
                     </div>
                 </div>
