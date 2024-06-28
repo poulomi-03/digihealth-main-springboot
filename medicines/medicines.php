@@ -87,11 +87,21 @@
                     <option value="type">Offers</option>
                 </select>
                 <i class="fa-solid fa-cart-plus" style="color: #75E6DA; font-size: 24px;"></i>
+
+                <?php
+                session_start();
+                if (isset($_SESSION['email'])) {
+                    echo '
+                            
+                                            <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>';
+                }
+                ?>
+
             </div>
 
             <div class="content-change">
 
-               <div class="product-outer" id="analgesicsLog">
+                <div class="product-outer" id="analgesicsLog">
                     <div class="product">
                         <div class="img">
                             <img src="../assets/images/medicines/tablet.jpg" alt="">
@@ -194,7 +204,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="product-outer" id="antibioticsLog">
                     <div class="product">
@@ -709,7 +719,7 @@
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
-                    </div>          
+                    </div>
                 </div>
 
                 <div class="product-outer" id="vitaminsAndSupplementsLog">
@@ -917,7 +927,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 </body>

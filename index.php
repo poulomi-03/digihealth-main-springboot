@@ -37,8 +37,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <!-- logo font -->
 
-
 </head>
+
 
 
 <body>
@@ -66,14 +66,14 @@
                             <li><a href="">NGO's</a></li>
                             <li><a href="">Our clients</a></li>
                         </ul>
+                        <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;"></i>
 
                         <?php
                         session_start();
                         if (isset($_SESSION['email'])) {
                             echo '<ul>
-                                    <i class="fa-solid fa-user" style="color: #ffffff; margin: 0;"></i>
                                         <li id="userDropdown">
-                                            <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>
+                                            <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p> 
                                             <ul id="userOptions">
                                                 <li><a href="profile.php">Your Profile</a></li>
                                                 <li><a href="php/logout.php">Logout</a></li>
@@ -101,7 +101,7 @@
                     <ul>
                         <li><a id="aServices" href="#">Services</a></li>
                         <li><a href="#">Community</a></li>
-                        <li><a target="_blank" href="./medicines/medicines.html">Medicines</a></li>
+                        <li><a target="_blank" href="./medicines/medicines.php">Medicines</a></li>
                         <li><a href="#">Teams</a></li>
                         <li><a href="#">Doctors</a></li>
                         <li><a href="#">Contact</a></li>

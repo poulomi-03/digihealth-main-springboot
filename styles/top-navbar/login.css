@@ -35,10 +35,13 @@
 
 
 
+
+
 /* after login dropdown starts */
 
 #userOptions {
     list-style-type: none;
+
 }
 
 #userDropdown {
@@ -72,6 +75,8 @@
 
 #userDropdown:hover #userOptions {
     display: block;
+    margin-left: -50px;
+    border-radius: 5px;
 }
 
 /* after login dropdown starts */
