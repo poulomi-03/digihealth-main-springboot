@@ -36,6 +36,7 @@ if ($stmt->num_rows > 0) {
         // Password is correct, set session variables
         $_SESSION['email'] = $dbEmail;
         $_SESSION['username'] = $dbName; // Store username in session
+        $initial = substr($username, 0, 1);
         header("Location: ../index.php"); // Redirect to a welcome page or dashboard
     } else {
         // Password is incorrect
