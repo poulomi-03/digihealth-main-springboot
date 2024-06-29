@@ -89,7 +89,8 @@
                                             <li>
                                             <p style="cursor:pointer;" id="loginLink">Login</p>
                                             </li>
-                                        </li
+
+                                        </li>
                                   </ul>';
                         }
                         ?>
