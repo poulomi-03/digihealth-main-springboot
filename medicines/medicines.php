@@ -91,10 +91,9 @@
                 <?php
                 session_start();
                 if (isset($_SESSION['email'])) {
-                    echo '
-                            
-                                            <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>';
-                }
+                    echo    
+                        '<p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>';
+                    }
                 ?>
 
             </div>
