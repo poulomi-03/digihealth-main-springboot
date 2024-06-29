@@ -10,7 +10,7 @@
     <link rel="icon" href="./assets/images/home-section/logo/logo-main.png" type="image/x-icon" />
     <!-- title icon -->
 
-    <!-- all linked css -->
+    <!-- all linked css -->f
     <link rel="stylesheet" href="./styles/universal-css-design/universal-css-design.css">
     <link rel="stylesheet" href="./styles/top-navbar/top-navbar.css">
     <link rel="stylesheet" href="./styles/top-navbar/register.css">
@@ -83,12 +83,13 @@
                                   </ul>';
                         } else {
                             echo '<ul>
+
                                         <li>
                                             <p style="cursor:pointer;" id="registerLink">Register</p>
                                             <li>
                                             <p style="cursor:pointer;" id="loginLink">Login</p>
                                             </li>
-                                        </li>
+                                        </li
                                   </ul>';
                         }
                         ?>
