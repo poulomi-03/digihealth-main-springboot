@@ -75,7 +75,7 @@
                                         <li id="userDropdown">
                                             <p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p> 
                                             <ul id="userOptions">
-                                                <li><a href="profile.php">Your Profile</a></li>
+                                                <li><a href="user-profile/user-profile.php">My Profile</a></li>
                                                 <li><a href="php/logout.php">Logout</a></li>
                                             </ul>
                                         </li>
