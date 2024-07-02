@@ -20,7 +20,7 @@ $email = $_POST['username'];
 $password = $_POST['password'];
 
 // Check if the email exists in the database
-$sql = "SELECT email, password, name FROM registeredusers WHERE email = ?";
+$sql = "SELECT email, password, name, user_id, registration_date, phone FROM registeredusers WHERE email = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $email);
 $stmt->execute();
@@ -28,27 +28,27 @@ $stmt->store_result();
 
 if ($stmt->num_rows > 0) {
     // Bind the result to variables
-    $stmt->bind_result($dbEmail, $dbPassword, $dbName);
+    $stmt->bind_result($dbEmail, $dbPassword, $dbName, $dbUserId, $dbRegistrationDate, $dbPhone);
     $stmt->fetch();
 
     // Verify the password
     if ($password == $dbPassword) {
         // Password is correct, set session variables
         $_SESSION['email'] = $dbEmail;
-        $_SESSION['username'] = $dbName; // Store username in session
-        
-        $initial = substr($username, 0, 1);
-        header("Location: ../index.php"); // Redirect to a welcome page or dashboard
+        $_SESSION['username'] = $dbName;
+        $_SESSION['user_id'] = $dbUserId;
+        $_SESSION['registration_date'] = $dbRegistrationDate;
+        $_SESSION['phone'] = $dbPhone;
+
+        header("Location: ../index.php");
+        exit();
     } else {
-        // Password is incorrect
         echo "Invalid password.";
     }
 } else {
-    // Email does not exist
     echo "No account found with that email.";
 }
 
-// Close the statement and connection
 $stmt->close();
 $conn->close();
 ?>
