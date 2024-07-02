@@ -82,7 +82,7 @@ session_start();
                         style="color: white; background-color: grey;" />
                 </div>
                 <div class="can-edit">
-                    <form action="POST">
+                    <form action="update-profile.php" method="POST">
                         <div class="first">
                             <input type="text" placeholder="Your Name" name="name">
                             <input type="number" placeholder="Your Age" name="age">
