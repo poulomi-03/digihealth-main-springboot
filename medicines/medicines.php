@@ -144,7 +144,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/tramadol.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Tramadol</h2>
@@ -154,7 +154,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/oxycodone.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Oxycodone</h2>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/hydrocodone.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Hydrocodone</h2>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/celebrex.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Celebrex</h2>
@@ -184,7 +184,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/voltarengel.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Voltaren Gel</h2>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/codeine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Codeine</h2>
