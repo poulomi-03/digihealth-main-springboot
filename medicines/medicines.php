@@ -103,7 +103,7 @@
                 <div class="product-outer" id="analgesicsLog">
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Paracetamol</h2>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/aspirin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Aspirin</h2>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/naproxen.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Naproxen</h2>
