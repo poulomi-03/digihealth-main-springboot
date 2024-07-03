@@ -117,6 +117,8 @@ unset($_SESSION['update_success']);
         </div>
     <?php endif; ?>
 
+
+    <!-- script for update-success-pop-up starts -->
     <script>
         function closePopup() {
             document.querySelector('.popup').classList.remove('active');
@@ -131,6 +133,8 @@ unset($_SESSION['update_success']);
             });
         <?php endif; ?>
     </script>
+       <!-- script for update-success-pop-up ends -->
+
 </body>
 
 </html>
