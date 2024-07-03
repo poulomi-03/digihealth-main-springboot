@@ -101,7 +101,7 @@ session_start();
                             <input type="password" placeholder="Confirm New Password" name="confirm_new_password">
                         </div>
                         <div class="first">
-                            <button>Update</button>
+                            <button type="submit">Update</button>
                         </div>
                     </form>
                 </div>
