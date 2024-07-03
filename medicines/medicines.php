@@ -91,9 +91,9 @@
                 <?php
                 session_start();
                 if (isset($_SESSION['email'])) {
-                    echo    
+                    echo
                         '<p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>';
-                    }
+                }
                 ?>
 
             </div>
@@ -110,10 +110,11 @@
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
+
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/ibuprofen.jpeg" alt="">
                         </div>
                         <div class="content">
                             <h2>Ibuprofen</h2>
