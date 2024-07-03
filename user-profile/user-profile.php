@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+$show_popup = isset($_SESSION['update_success']) && $_SESSION['update_success'];
+unset($_SESSION['update_success']);
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,6 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <!-- logo font -->
-
 </head>
 
 <body>
@@ -108,6 +108,29 @@ session_start();
             </div>
         </div>
     </div>
+
+    <?php if ($show_popup): ?>
+        <div class="overlay active"></div>
+        <div class="popup active">
+            <p style="color: black; font-weight: 600">Details updated successfully!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    <?php endif; ?>
+
+    <script>
+        function closePopup() {
+            document.querySelector('.popup').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+
+        // Show the popup if the session variable was set
+        <?php if ($show_popup): ?>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.popup').classList.add('active');
+                document.querySelector('.overlay').classList.add('active');
+            });
+        <?php endif; ?>
+    </script>
 </body>
 
 </html>
