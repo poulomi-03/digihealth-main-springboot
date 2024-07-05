@@ -94,7 +94,7 @@ unset($_SESSION['update_success']);
                             <input type="text" placeholder="Your City" name="city">
                         </div>
                         <div class="first">
-                            <input id="file-upload" type="file" accept="image/jpeg, image/png, image/jpg">
+                            <input id="file-upload" type="file" accept="image/jpeg, image/png, image/jpg" name="user-profile-img">
                         </div>
                         <div class="first">
                             <input type="password" placeholder="New Password" name="new_password">
