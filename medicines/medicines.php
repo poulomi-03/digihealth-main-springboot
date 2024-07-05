@@ -209,7 +209,7 @@
                 <div class="product-outer" id="antibioticsLog">
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/penicilin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Penicillin</h2>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/erythromycin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Erythromycin</h2>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/cephalexin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Cephalexin</h2>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/azithromycin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Azithromycin</h2>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/moxifloxacin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Moxifloxacin</h2>
@@ -259,7 +259,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/ciprofloxacin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Ciprofloxacin</h2>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/colistin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Colistin</h2>
@@ -279,7 +279,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/ceftazidime.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Ceftazidime</h2>
@@ -289,7 +289,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/aztreonam.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Aztreonam</h2>
@@ -299,7 +299,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antibioticsLog/rfampin.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Rifampin</h2>
@@ -312,7 +312,7 @@
                 <div class="product-outer" id="antidepressantsLog">
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/setraline.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Sertraline</h2>
@@ -322,7 +322,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/escitalopram.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Escitalopram</h2>
@@ -332,7 +332,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/amitriptyline .jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Amitriptyline</h2>
@@ -342,7 +342,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/paroxetine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Paroxetine </h2>
@@ -352,17 +352,17 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/citalopram.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h2>Escitalopram </h2>
+                            <h2>Citalopram </h2>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/phenelzine.png" alt="">
                         </div>
                         <div class="content">
                             <h2>Phenelzine</h2>
@@ -372,7 +372,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/fluvoxamine .jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Fluvoxamine</h2>
@@ -392,7 +392,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/bupropion.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Bupropion </h2>
@@ -402,7 +402,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antidepressantsLog/agomelatine .jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Agomelatine</h2>
@@ -489,7 +489,7 @@
                             <img src="../assets/images/medicines/tablet.jpg" alt="">
                         </div>
                         <div class="content">
-                            <h2>Fexofenadine/</h2>
+                            <h2>Fexofenadine</h2>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
