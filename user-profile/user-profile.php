@@ -2,6 +2,34 @@
 session_start();
 $show_popup = isset($_SESSION['update_success']) && $_SESSION['update_success'];
 unset($_SESSION['update_success']);
+
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "users";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch user data for display
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM registeredusers WHERE email='$email'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $user_profile_picture = base64_encode($row['user_profile_picture']);
+} else {
+    // Handle if user data not found
+}
+
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -24,8 +52,7 @@ unset($_SESSION['update_success']);
     <!-- universal google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <!-- universal google fonts -->
 
@@ -40,7 +67,7 @@ unset($_SESSION['update_success']);
     <div class="profile-outer">
         <div class="profile-left">
             <div class="profile-img">
-                <img src="../assets/images/home-section/logo/logo-main.png" alt="" srcset="">
+                <img src="data:image/jpeg;base64,<?php echo $user_profile_picture; ?>" alt="Profile Picture">
             </div>
             <p>User ID</p>
             <?php
@@ -82,7 +109,7 @@ unset($_SESSION['update_success']);
                         style="color: white; background-color: grey;" />
                 </div>
                 <div class="can-edit">
-                    <form action="update-profile.php" method="POST">
+                    <form action="update-profile.php" method="POST" enctype="multipart/form-data">
                         <div class="first">
                             <input type="text" placeholder="Your Name" name="name">
                             <input type="number" placeholder="Your Age" name="age">
@@ -94,7 +121,7 @@ unset($_SESSION['update_success']);
                             <input type="text" placeholder="Your City" name="city">
                         </div>
                         <div class="first">
-                            <input id="file-upload" type="file" accept="image/jpeg, image/png, image/jpg" name="user-profile-img">
+                            <input id="file-upload" type="file" accept="image/jpeg, image/png, image/jpg" name="image">
                         </div>
                         <div class="first">
                             <input type="password" placeholder="New Password" name="new_password">
@@ -116,7 +143,6 @@ unset($_SESSION['update_success']);
             <button onclick="closePopup()">Close</button>
         </div>
     <?php endif; ?>
-
 
     <!-- script for update-success-pop-up starts -->
     <script>
