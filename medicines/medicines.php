@@ -416,7 +416,7 @@
                 <div class="product-outer" id="antihistaminesLog">
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/loratadine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Loratadine </h2>
@@ -426,7 +426,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/cetirizine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Cetirizine </h2>
@@ -436,7 +436,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/cyproheptadine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Cyproheptadine</h2>
@@ -446,7 +446,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/meclizine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Meclizine</h2>
@@ -456,7 +456,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/cinnarizine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Cinnarizine</h2>
@@ -466,7 +466,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/oxatomide.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Oxatomide</h2>
@@ -476,7 +476,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/ketotifen.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Ketotifen</h2>
@@ -486,7 +486,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/fexofenadine.jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Fexofenadine</h2>
@@ -496,7 +496,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/olopatadine .jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Olopatadine </h2>
@@ -506,7 +506,7 @@
                     </div>
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/tablet.jpg" alt="">
+                            <img src="../assets/images/medicines/antihistaminesLog/bilastine .jpg" alt="">
                         </div>
                         <div class="content">
                             <h2>Bilastine</h2>
