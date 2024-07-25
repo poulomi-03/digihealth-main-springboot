@@ -111,9 +111,9 @@ $conn->close();
                 <div class="can-edit">
                     <form action="update-profile.php" method="POST" enctype="multipart/form-data">
                         <div class="first">
-                            <input type="text" placeholder="Your Name" name="name">
-                            <input type="number" placeholder="Your Age" name="age">
-                            <input type="text" placeholder="Select Blood Group" name="blood_group">
+                            <input type="text" placeholder="<?php echo htmlspecialchars($_SESSION['username']); ?>" name="name">
+                            <input type="number" placeholder="<?php echo htmlspecialchars($_SESSION['age']); ?>" name="age">
+                            <input type="text" placeholder="<?php echo htmlspecialchars($_SESSION['blood_group']); ?>" name="blood_group">
                         </div>
                         <div class="first">
                             <input type="date" placeholder="Your Birth Date" name="date_of_birth">

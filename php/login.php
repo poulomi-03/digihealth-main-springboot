@@ -20,7 +20,7 @@ $email = $_POST['username'];
 $password = $_POST['password'];
 
 // Check if the email exists in the database
-$sql = "SELECT email, password, name, user_id, registration_date, phone FROM registeredusers WHERE email = ?";
+$sql = "SELECT email, age, blood_group, password, name, user_id, registration_date, phone FROM registeredusers WHERE email = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("s", $email);
 $stmt->execute();
@@ -28,7 +28,7 @@ $stmt->store_result();
 
 if ($stmt->num_rows > 0) {
     // Bind the result to variables
-    $stmt->bind_result($dbEmail, $dbPassword, $dbName, $dbUserId, $dbRegistrationDate, $dbPhone);
+    $stmt->bind_result($dbEmail, $dbAge, $dbBloodGroup, $dbPassword, $dbName, $dbUserId, $dbRegistrationDate, $dbPhone);
     $stmt->fetch();
 
     // Verify the password
@@ -37,6 +37,8 @@ if ($stmt->num_rows > 0) {
         $_SESSION['email'] = $dbEmail;
         $_SESSION['username'] = $dbName;
         $_SESSION['user_id'] = $dbUserId;
+        $_SESSION['age'] = $dbAge;
+        $_SESSION['blood_group'] = $dbBloodGroup;
         $_SESSION['registration_date'] = $dbRegistrationDate;
         $_SESSION['phone'] = $dbPhone;
 

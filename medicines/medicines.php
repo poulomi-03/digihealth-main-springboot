@@ -204,8 +204,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="product-outer" id="antibioticsLog">
                     <div class="product">
                         <div class="img">
