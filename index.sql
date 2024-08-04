@@ -81,3 +81,5 @@ BEGIN
     SET NEW.product_id = custom_id;
 END //
 DELIMITER ;
+
+
