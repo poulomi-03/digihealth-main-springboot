@@ -23,6 +23,8 @@ $phone = $_POST['phone'];
 $password = $_POST['password'];
 $confPassword = $_POST['confPassword'];
 
+
+
 // Validate passwords match
 if ($password !== $confPassword) {
     die("Passwords do not match.");
