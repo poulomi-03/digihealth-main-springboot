@@ -2,73 +2,122 @@ const analgesicsLog = document.getElementById("analgesicsLog");
 const antibioticsLog = document.getElementById("antibioticsLog");
 const antidepressantsLog = document.getElementById("antidepressantsLog");
 const antihistaminesLog = document.getElementById("antihistaminesLog");
-const diabetesMedicationsLog = document.getElementById("diabetesMedicationsLog");
+const diabetesMedicationsLog = document.getElementById(
+  "diabetesMedicationsLog"
+);
 const bronchodilatorsLog = document.getElementById("bronchodilatorsLog");
-const vitaminsAndSupplementsLog = document.getElementById("vitaminsAndSupplementsLog");
+const vitaminsAndSupplementsLog = document.getElementById(
+  "vitaminsAndSupplementsLog"
+);
 const eyeCareLog = document.getElementById("eyeCareLog");
 
-document.addEventListener("DOMContentLoaded", function() {
-    const navItems = document.querySelectorAll(".nav-items");
-    const productOuters = document.querySelectorAll(".product-outer");
-    const allMedicines = document.getElementById("allMedicines");
+document.addEventListener("DOMContentLoaded", function () {
+  const navItems = document.querySelectorAll(".nav-items");
+  const productOuters = document.querySelectorAll(".product-outer");
+  const allMedicines = document.getElementById("allMedicines");
 
-    function clearActiveStates() {
-        navItems.forEach(item => {
-            item.style.backgroundColor = "";
-        });
-    }
+  function clearActiveStates() {
+    navItems.forEach((item) => {
+      item.style.backgroundColor = "";
+    });
+  }
 
-    function handleNavClick(navItem) {
-        clearActiveStates();
-        navItem.style.backgroundColor = "#75E6DA";
-        
-        const id = navItem.id;
+  function handleNavClick(navItem) {
+    clearActiveStates();
+    navItem.style.backgroundColor = "#75E6DA";
 
-        productOuters.forEach((productOuter, index) => {
-            if (id === 'allMedicines') {
-                productOuter.style.display = 'grid';
-            } else {
-                productOuter.style.display = 'none';
-            }
-        });
+    const id = navItem.id;
 
-        if (id === 'allMedicines') {
-            productOuters.forEach(productOuter => {
-                productOuter.style.display = 'grid';
-            });
-        } else if (id === 'analgesics') {
-            analgesicsLog.style.display = 'grid';
-            // analgesicsLog.style.border = '4px solid blue';
-        } else if (id === 'antibiotics') {
-            antibioticsLog.style.display = 'grid';
-            // antibioticsLog.style.border = '4px solid yellow';
-        } else if (id === 'antidepressants') {
-            antidepressantsLog.style.display = 'grid';
-            // antidepressantsLog.style.border = '4px solid pink';
-        } else if (id === 'antihistamines') {
-            antihistaminesLog.style.display = 'grid';
-            // antihistaminesLog.style.border = '4px solid voilet';
-        } else if (id === 'diabetesMedications') {
-            diabetesMedicationsLog.style.display = 'grid';
-            // diabetesMedicationsLog.style.border = '4px solid green';
-        } else if (id === 'bronchodilators') {
-            bronchodilatorsLog.style.display = 'grid';
-            // bronchodilatorsLog.style.border = '4px solid red';
-        } else if (id === 'vitaminsAndSupplements') {
-            vitaminsAndSupplementsLog.style.display = 'grid';
-            // vitaminsAndSupplementsLog.style.border = '4px solid grey';
-        } else if (id === 'eyeCare') {
-            eyeCareLog.style.display = 'grid';
-            // eyeCareLog.style.border = '4px solid crimson';
-        }
-    }
-
-    navItems.forEach(navItem => {
-        navItem.addEventListener("click", function() {
-            handleNavClick(this);
-        });
+    productOuters.forEach((productOuter, index) => {
+      if (id === "allMedicines") {
+        productOuter.style.display = "grid";
+      } else {
+        productOuter.style.display = "none";
+      }
     });
 
-    // Trigger click on "allMedicines" by default
-    handleNavClick(allMedicines);
+    if (id === "allMedicines") {
+      productOuters.forEach((productOuter) => {
+        productOuter.style.display = "grid";
+      });
+    } else if (id === "analgesics") {
+      analgesicsLog.style.display = "grid";
+      // analgesicsLog.style.border = '4px solid blue';
+    } else if (id === "antibiotics") {
+      antibioticsLog.style.display = "grid";
+      // antibioticsLog.style.border = '4px solid yellow';
+    } else if (id === "antidepressants") {
+      antidepressantsLog.style.display = "grid";
+      // antidepressantsLog.style.border = '4px solid pink';
+    } else if (id === "antihistamines") {
+      antihistaminesLog.style.display = "grid";
+      // antihistaminesLog.style.border = '4px solid voilet';
+    } else if (id === "diabetesMedications") {
+      diabetesMedicationsLog.style.display = "grid";
+      // diabetesMedicationsLog.style.border = '4px solid green';
+    } else if (id === "bronchodilators") {
+      bronchodilatorsLog.style.display = "grid";
+      // bronchodilatorsLog.style.border = '4px solid red';
+    } else if (id === "vitaminsAndSupplements") {
+      vitaminsAndSupplementsLog.style.display = "grid";
+      // vitaminsAndSupplementsLog.style.border = '4px solid grey';
+    } else if (id === "eyeCare") {
+      eyeCareLog.style.display = "grid";
+      // eyeCareLog.style.border = '4px solid crimson';
+    }
+  }
+
+  navItems.forEach((navItem) => {
+    navItem.addEventListener("click", function () {
+      handleNavClick(this);
+    });
+  });
+
+  // Trigger click on "allMedicines" by default
+  handleNavClick(allMedicines);
+});
+
+// for user-cart
+
+document.getElementById("cart-icon").addEventListener("click", function () {
+  // Hide elements with class 'content-change'
+  document.querySelectorAll(".content-change").forEach(function (element) {
+    element.style.display = "none";
+  });
+
+  // Display elements with class 'user-cart' as flex
+  document.querySelectorAll(".user-cart").forEach(function (element) {
+    element.style.display = "flex";
+  });
+});
+
+
+
+
+
+
+// to remove from cart
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".remove-from-cart").forEach((button) => {
+    button.addEventListener("click", function () {
+      const productId = this.getAttribute("data-product-id");
+
+      fetch("cart/remove_from_cart.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ product_id: productId }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            this.closest(".product").remove();
+          } else {
+            alert("Failed to remove product from cart.");
+          }
+        })
+        .catch((error) => console.error("Error:", error));
+    });
+  });
 });
