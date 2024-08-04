@@ -103,11 +103,12 @@
                 <div class="product-outer" id="analgesicsLog">
                     <div class="product">
                         <div class="img">
-                            <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt="">
+                            <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt=""
+                                name="product_image">
                         </div>
                         <div class="content">
-                            <h2>Paracetamol</h2>
-                            <button class="add-to-cart">Add to Cart</button>
+                            <h2 name="product_name">Paracetamol</h2>
+                            <button class="add-to-cart" name="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
 
@@ -936,6 +937,7 @@
 
 <!-- all linked scripts -->
 <script src="medicines.js"></script>
+<script src="cart/cart.js"></script>
 <!-- <script src="../../scripts/medicines/medicines.js"></script> -->
 <!-- all linked scripts -->
 
