@@ -7,7 +7,7 @@ unset($_SESSION['update_success']);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "users";
+$dbname = "digihealth_users";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
