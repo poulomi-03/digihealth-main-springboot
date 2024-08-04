@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS cart (
     product_name VARCHAR(255) NOT NULL,
     added_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (product_id),
-    FOREIGN KEY (user_id) REFERENCES users.registeredusers(user_id)
+    FOREIGN KEY (user_id) REFERENCES digihealth_users.registeredusers(user_id)
 );
 
 -- Create trigger for customized product_id for table "cart" 

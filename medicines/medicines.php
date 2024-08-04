@@ -86,7 +86,7 @@
                     <option value="type">Brands</option>
                     <option value="type">Offers</option>
                 </select>
-                <i class="fa-solid fa-cart-plus" style="color: #75E6DA; font-size: 24px;"></i>
+                <i class="fa-solid fa-cart-plus" id="cart-icon" style="color: #75E6DA; font-size: 24px;"></i>
 
                 <?php
                 session_start();
@@ -95,8 +95,55 @@
                         '<p style="cursor:pointer;">' . htmlspecialchars($_SESSION['username']) . '</p>';
                 }
                 ?>
-
             </div>
+
+
+
+
+            <!-- for user-cart -->
+            <?php
+
+            // Assuming user_id is stored in session
+            $user_id = $_SESSION['user_id'];
+
+            $servername = "localhost";
+            $username = "root"; // Change this to your database username
+            $password = ""; // Change this to your database password
+            $dbname = "digihealth_medicines_products";
+
+            // Create a connection to the database
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            $sql = "SELECT * FROM cart WHERE user_id = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("s", $user_id);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            $products = $result->fetch_all(MYSQLI_ASSOC);
+
+            ?>
+
+            <div class="user-cart content-change">
+                <h1>MY CART</h1>
+                <?php foreach ($products as $product): ?>
+                    <div class="product">
+                        <div class="img">
+                            <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt="" name="product_image">
+                        </div>
+                        <div class="content">
+                            <h2 name="product_name"><?php echo htmlspecialchars($product['product_name']); ?></h2>
+                            <button class="remove-from-cart" name="remove-from-cart"
+                                data-product-id="<?php echo $product['product_id']; ?>">Remove</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- for user-cart -->
+
+
+
 
             <div class="content-change">
 
