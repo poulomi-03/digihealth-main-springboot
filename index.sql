@@ -1,5 +1,11 @@
--- > step 01 : Creating user table
-CREATE TABLE registeredUsers (
+-- Step 01 : Creating "digihealth_users" database
+create database digihealth_users;
+
+-- use "digihealth_users" database
+use digihealth_users;
+
+-- Create table "registeredusers" 
+CREATE TABLE registeredusers (
     user_id VARCHAR(20) NOT NULL,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -15,11 +21,10 @@ CREATE TABLE registeredUsers (
     PRIMARY KEY (user_id)
 );
 
-
--- > step 02 : creating trigger for customized userid 
+-- Create trigger for customized user_id for table "registeredusers"  
 DELIMITER //
-CREATE TRIGGER before_insert_registeredUsers
-BEFORE INSERT ON registeredUsers
+CREATE TRIGGER before_insert_registeredusers
+BEFORE INSERT ON registeredusers
 FOR EACH ROW
 BEGIN
     DECLARE new_id INT;
@@ -38,8 +43,16 @@ END //
 DELIMITER ;
 
 
+----------------------------------------------------------------------------------------------------------------
 
--- Create table cart
+
+-- Step 02 : Creating "digihealth_medicines_products" database
+create database digihealth_medicines_products;
+
+-- use "digihealth_medicines_products" database
+use database digihealth_medicines_products;
+
+-- Create table "cart" 
 CREATE TABLE IF NOT EXISTS cart (
     product_id VARCHAR(20) NOT NULL,
     user_id VARCHAR(255) NOT NULL,
@@ -49,7 +62,7 @@ CREATE TABLE IF NOT EXISTS cart (
     FOREIGN KEY (user_id) REFERENCES users.registeredusers(user_id)
 );
 
--- Create trigger for cart table for custom product_id
+-- Create trigger for customized product_id for table "cart" 
 DELIMITER //
 CREATE TRIGGER before_insert_cart
 BEFORE INSERT ON cart
@@ -67,5 +80,4 @@ BEGIN
     -- Assign the custom ID to the new row
     SET NEW.product_id = custom_id;
 END //
-
 DELIMITER ;

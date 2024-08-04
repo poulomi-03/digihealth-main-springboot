@@ -6,7 +6,7 @@ session_start();
 $servername = "localhost"; // your server name
 $username = "root"; // your database username
 $password = ""; // your database password
-$dbname = "users"; // your database name
+$dbname = "digihealth_users"; // your database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

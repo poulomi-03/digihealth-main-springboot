@@ -33,7 +33,7 @@ $user_id = $_SESSION['user_id'];
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "users";
+$dbname = "digihealth_medicines_products";
 
 // Create a connection to the database
 $conn = new mysqli($servername, $username, $password, $dbname);
