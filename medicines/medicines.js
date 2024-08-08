@@ -1,3 +1,5 @@
+// Left-Navigation Bar starts
+
 const analgesicsLog = document.getElementById("analgesicsLog");
 const antibioticsLog = document.getElementById("antibioticsLog");
 const antidepressantsLog = document.getElementById("antidepressantsLog");
@@ -77,7 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
   handleNavClick(allMedicines);
 });
 
-// for user-cart
+// Left-Navigation Bar ends
+
+
+
+// for user-cart starts
 
 document.getElementById("cart-icon").addEventListener("click", function () {
   // Hide elements with class 'content-change'
@@ -91,33 +97,5 @@ document.getElementById("cart-icon").addEventListener("click", function () {
   });
 });
 
+// for user-cart ends
 
-
-
-
-
-// to remove from cart
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".remove-from-cart").forEach((button) => {
-    button.addEventListener("click", function () {
-      const productId = this.getAttribute("data-product-id");
-
-      fetch("cart/remove_from_cart.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ product_id: productId }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.success) {
-            this.closest(".product").remove();
-          } else {
-            alert("Failed to remove product from cart.");
-          }
-        })
-        .catch((error) => console.error("Error:", error));
-    });
-  });
-});
