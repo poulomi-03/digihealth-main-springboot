@@ -82,4 +82,4 @@ BEGIN
 END //
 DELIMITER ;
 
-
+-- user_id foreign key connecting the two tables cart and registeresusers tables and further can be used to send the order to the user's address

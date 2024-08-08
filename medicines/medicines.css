@@ -250,7 +250,7 @@
     overflow: auto;
     overflow-x: hidden;
     scrollbar-width: none;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 .user-cart .product{
