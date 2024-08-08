@@ -98,7 +98,7 @@
             </div>
 
 
-
+            <!-- On-Click Content starts -->
 
             <!-- for user-cart -->
             <?php
@@ -125,23 +125,27 @@
 
             <div class="user-cart content-change">
                 <h1>MY CART</h1>
-                <?php foreach ($products as $product): ?>
-                    <div class="product">
-                        <div class="img">
-                            <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt="" name="product_image">
+                <div class="fetched-products">
+                    <?php foreach ($products as $product): ?>
+                        <div class="product">
+                            <div class="img">
+                                <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt=""
+                                    name="product_image">
+                            </div>
+                            <div class="content">
+                                <h2 name="product_name"><?php echo htmlspecialchars($product['product_name']); ?></h2>
+                                <button class="remove-from-cart" name="remove-from-cart"
+                                    data-product-id="<?php echo $product['product_id']; ?>">Remove</button>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
                         </div>
-                        <div class="content">
-                            <h2 name="product_name"><?php echo htmlspecialchars($product['product_name']); ?></h2>
-                            <button class="remove-from-cart" name="remove-from-cart"
-                                data-product-id="<?php echo $product['product_id']; ?>">Remove</button>
-                            <button class="buy-now">Buy Now</button>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
 
             <!-- for user-cart -->
 
+            <!-- On-Click Content ends -->
 
 
 
