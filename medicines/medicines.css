@@ -275,8 +275,6 @@
     overflow: auto;
     overflow-x: hidden;
     scrollbar-width: none;
-    /* border: 4px solid black; */
-    /* width: 80vw; */
 }
 
 .user-cart .product{
