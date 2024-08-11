@@ -124,7 +124,10 @@
             ?>
 
             <div class="user-cart content-change">
-                <h1>MY CART</h1>
+                <div class="cart-title">
+                    <i id="back-icon" class="fa-solid fa-circle-arrow-left" style="color: #05445E;"></i>
+                    <h1>MY CART</h1>
+                </div>
                 <div class="fetched-products">
                     <?php foreach ($products as $product): ?>
                         <div class="product">
