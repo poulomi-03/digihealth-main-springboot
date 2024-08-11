@@ -97,5 +97,20 @@ document.getElementById("cart-icon").addEventListener("click", function () {
   });
 });
 
+
+// back to medicines
+document.getElementById("back-icon").addEventListener("click", function () {
+  // Hide elements with class 'content-change'
+  document.querySelectorAll(".content-change").forEach(function (element) {
+    element.style.display = "grid";
+  });
+
+  // Display elements with class 'user-cart' as flex
+  document.querySelectorAll(".user-cart").forEach(function (element) {
+    element.style.display = "none";
+  });
+});
+
+
 // for user-cart ends
 
