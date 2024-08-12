@@ -100,6 +100,7 @@
 
             <!-- On-Click Content starts -->
 
+
             <!-- for user-cart -->
             <?php
 
@@ -132,13 +133,16 @@
                     <?php foreach ($products as $product): ?>
                         <div class="product">
                             <div class="img">
-                                <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt=""
-                                    name="product_image">
+                                <img src="<?php echo htmlspecialchars($product['product_image']); ?>"
+                                    alt="Product Image">
                             </div>
                             <div class="content">
-                                <h2 name="product_name"><?php echo htmlspecialchars($product['product_name']); ?></h2>
-                                <button class="remove-from-cart" name="remove-from-cart"
-                                    data-product-id="<?php echo $product['product_id']; ?>">Remove</button>
+                                <h2><?php echo htmlspecialchars($product['product_name']); ?></h2>
+                                <div class="price-tag">
+                                    <p>Rs <span><?php echo htmlspecialchars($product['product_price']); ?></span>/-</p>
+                                </div>
+                                <button class="remove-from-cart"
+                                    data-product-id="<?php echo htmlspecialchars($product['product_id']); ?>">Remove</button>
                                 <button class="buy-now">Buy Now</button>
                             </div>
                         </div>
@@ -146,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- for user-cart -->
+            <!-- for user-cart ends-->
 
             <!-- On-Click Content ends -->
 
@@ -156,12 +160,16 @@
 
                 <div class="product-outer" id="analgesicsLog">
                     <div class="product">
+
                         <div class="img">
                             <img src="../assets/images/medicines/analgesicsLog/paracetamol.jpg" alt=""
                                 name="product_image">
                         </div>
                         <div class="content">
                             <h2 name="product_name">Paracetamol</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart" name="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -173,6 +181,9 @@
                         </div>
                         <div class="content">
                             <h2>Ibuprofen</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -183,6 +194,9 @@
                         </div>
                         <div class="content">
                             <h2>Aspirin</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -193,6 +207,9 @@
                         </div>
                         <div class="content">
                             <h2>Naproxen</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -203,6 +220,9 @@
                         </div>
                         <div class="content">
                             <h2>Tramadol</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -213,6 +233,9 @@
                         </div>
                         <div class="content">
                             <h2>Oxycodone</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -223,6 +246,9 @@
                         </div>
                         <div class="content">
                             <h2>Hydrocodone</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -233,6 +259,9 @@
                         </div>
                         <div class="content">
                             <h2>Celebrex</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -243,6 +272,9 @@
                         </div>
                         <div class="content">
                             <h2>Voltaren Gel</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>
@@ -253,6 +285,9 @@
                         </div>
                         <div class="content">
                             <h2>Codeine</h2>
+                            <div class="price-tag">
+                                <p>Rs <span>55</span>/-</p>
+                            </div>
                             <button class="add-to-cart">Add to Cart</button>
                             <button class="buy-now">Buy Now</button>
                         </div>

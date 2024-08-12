@@ -13,13 +13,18 @@ header('Content-Type: application/json');
 // Decode the JSON input
 $data = json_decode(file_get_contents('php://input'), true);
 
+// Debugging output
+error_log(print_r($data, true)); // Log the received data for debugging
+
 if (!$data) {
     echo json_encode(['success' => false, 'message' => 'Invalid input']);
     exit;
 }
 
-// Get product name from the input data
-$name = $data['name'];
+// Get product details from the input data
+$name = isset($data['name']) ? $data['name'] : null;
+$image = isset($data['image']) ? $data['image'] : null;
+$price = isset($data['price']) ? $data['price'] : null;
 
 // Check if user_id is set in the session
 if (!isset($_SESSION['user_id'])) {
@@ -45,14 +50,14 @@ if ($conn->connect_error) {
 }
 
 // Prepare the SQL statement
-$stmt = $conn->prepare("INSERT INTO cart (user_id, product_name) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO cart (user_id, product_name, product_image, product_price) VALUES (?, ?, ?, ?)");
 if (!$stmt) {
     echo json_encode(['success' => false, 'message' => 'Prepare statement failed: ' . $conn->error]);
     exit;
 }
 
-// Bind parameters (both user_id and product_name are strings)
-$stmt->bind_param("ss", $user_id, $name);
+// Bind parameters (user_id, product_name, product_image, and product_price are all strings)
+$stmt->bind_param("ssss", $user_id, $name, $image, $price);
 
 // Execute the statement
 if ($stmt->execute()) {
