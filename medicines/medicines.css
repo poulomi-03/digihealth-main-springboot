@@ -160,7 +160,7 @@
 
 .content-change .product-outer .product{
     width: 180px;
-    height: 240px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,10 +199,35 @@
     align-content: center;
     justify-content: center;
     gap: 5px;
+    /* border: 1px solid blue; */
+}
+
+.content h2{
+    font-size: 20px;
+}
+
+.price-tag {
+    width: 75px;
+    height: 25px;
+    position: relative; /* Keep as relative for positioning context */
+    border-radius: 2px;
+    border: 1px solid #75E6DA;
+    background-color: #05445E;
+    display: flex; /* Add this to enable flexbox */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.product .price-tag p {
+    margin: 0; /* Remove default margin for better alignment */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: white; /* Ensure text color contrasts well with background */
 }
 
 .content button{
-    height: 25%;
+    height: 20%;
     width: 75%;
     outline: none;
     border: none;

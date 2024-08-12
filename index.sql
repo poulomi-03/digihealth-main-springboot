@@ -50,13 +50,15 @@ DELIMITER ;
 create database digihealth_medicines_products;
 
 -- use "digihealth_medicines_products" database
-use database digihealth_medicines_products;
+use digihealth_medicines_products;
 
 -- Create table "cart" 
 CREATE TABLE IF NOT EXISTS cart (
     product_id VARCHAR(20) NOT NULL,
     user_id VARCHAR(255) NOT NULL,
+    product_image LONGBLOB,
     product_name VARCHAR(255) NOT NULL,
+    product_price INT(10) NOT NULL,
     added_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (product_id),
     FOREIGN KEY (user_id) REFERENCES digihealth_users.registeredusers(user_id)
