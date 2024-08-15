@@ -133,8 +133,7 @@
                     <?php foreach ($products as $product): ?>
                         <div class="product">
                             <div class="img">
-                                <img src="<?php echo htmlspecialchars($product['product_image']); ?>"
-                                    alt="Product Image">
+                                <img src="<?php echo htmlspecialchars($product['product_image']); ?>" alt="Product Image">
                             </div>
                             <div class="content">
                                 <h2><?php echo htmlspecialchars($product['product_name']); ?></h2>
@@ -152,6 +151,19 @@
 
             <!-- for user-cart ends-->
 
+            <div class="order-form">
+                <div class="form-container" id="form1">
+                    <h2>Product Order</h2>
+                    <p style="color:#000" class="order-form-product-name"><span>Product:</span></p>
+                    <button id="proceedButton" onclick="showSecondForm()">Proceed</button>
+                </div>
+
+                <div class="form-container hidden" id="form2">
+
+                    <button onclick="submitOrder()">Submit Order</button>
+                </div>
+            </div>
+
             <!-- On-Click Content ends -->
 
 
@@ -166,7 +178,7 @@
                                 name="product_image">
                         </div>
                         <div class="content">
-                            <h2 name="product_name">Paracetamol</h2>
+                            <h2 name="product_name" class="">Paracetamol</h2>
                             <div class="price-tag">
                                 <p>Rs <span>55</span>/-</p>
                             </div>

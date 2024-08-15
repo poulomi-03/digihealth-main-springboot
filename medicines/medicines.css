@@ -339,3 +339,80 @@
 
 
 /* user-cart ends */
+
+/* order-form starts */
+
+.order-form{
+    width: 400px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid greenyellow;
+}
+
+
+.order-form .hidden {
+    display: none;
+}
+
+.order-form .input-group {
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.order-form input[type="text"],
+.order-form input[type="number"],
+.order-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.order-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.order-form button:hover {
+    background-color: #218838;
+}
+
+#totalPrice {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+.order-form .hidden {
+    display: none;
+}
+
+
+
+/* order-form ends */
