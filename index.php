@@ -111,7 +111,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <button>Book Appointment</button>
-                    <button class="findBloodButton">Find Blood</button>
+                    <button class="findBloodButton" onclick="window.open('./find-blood/find-blood.html', '_blank');">Find Blood</button>
                 </div>
             </div>
 
