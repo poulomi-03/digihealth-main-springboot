@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to show the order form with product name
     function showOrderForm(productName) {
         orderFormProductName.textContent = productName;
-        orderForm.style.display = 'block'; // Show the form
+        orderForm.style.display = 'flex'; // Show the form
     }
 
     // Attach click event to each 'Buy Now' button
