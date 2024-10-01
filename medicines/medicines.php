@@ -152,17 +152,50 @@
             <!-- for user-cart ends-->
 
             <div class="order-form">
+                <div class="order-form-title">
+                    <h2>Order Details</h2>
+                    <p class="order-form-product-name"></p>
+                </div>
                 <div class="form-container" id="form1">
-                    <h2>Product Order</h2>
-                    <p style="color:#000" class="order-form-product-name"><span>Product:</span></p>
-                    <button id="proceedButton" onclick="showSecondForm()">Proceed</button>
+                    <form action="" method="POST">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email for delivery">
+
+                        <label for="text">Phone Number</label>
+                        <div class="phone-number">
+                            <input type="" placeholder="Enter your phone number">
+                            <a href="#">Verify</a>
+                        </div>
+
+                        <label for="delivery-address">Delivery Address</label>
+                        <input style="border: 1px solid #189AB4;" type="text" placeholder="Enter adress for delivery">
+
+                        <label for="text">Quantity</label>
+                        <div class="phone-number quantity">
+                            <input style="border: 1px solid #189AB4;width:300px;" type="number"
+                                placeholder="Enter quantity">
+                            <a href="#">4</a>
+                        </div>
+
+                        <div class="order-form-button">
+                            <button style="background-color:#189AB4;" type="button" id="proceedButton"
+                                onclick="showSecondForm()">Proceed</button>
+                            <button style="background-color:red;" type="button" id="closeOrderForm"
+                                onclick="closeOrderForm()">Cancel</button>
+                        </div>
+
+                    </form>
                 </div>
 
                 <div class="form-container hidden" id="form2">
-
-                    <button onclick="submitOrder()">Submit Order</button>
+                    <div class="order-form-button">
+                        <button type="button" onclick="submitOrder()">Place Order</button>
+                        <button style="background-color:red;" type="button" id="closeOrderForm"
+                            onclick="closeOrderForm()">Cancel</button>
+                    </div>
                 </div>
             </div>
+
 
             <!-- On-Click Content ends -->
 
