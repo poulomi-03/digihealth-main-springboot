@@ -118,75 +118,99 @@ document.getElementById("back-icon").addEventListener("click", function () {
 
 // Order form starts
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all 'Buy Now' buttons
-    const buyNowButtons = document.querySelectorAll('.buy-now');
+  // Get all 'Buy Now' buttons
+  const buyNowButtons = document.querySelectorAll('.buy-now');
 
-    // Get the order-form and its product name display
+  // Get the order-form and its product name display
+  const orderForm = document.querySelector('.order-form');
+  const orderFormProductName = orderForm.querySelector('.order-form-product-name');
+
+  // Function to show the order form with product name
+  function showOrderForm(productName) {
+      orderFormProductName.innerHTML = 
+          '<span style="color: #189AB4;">' + productName + '</span>';
+      orderForm.style.display = 'flex'; // Show the form
+  }
+
+  // Attach click event to each 'Buy Now' button
+  buyNowButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          // Find the closest product container to get the product name
+          const productContainer = button.closest('.product');
+          
+          if (productContainer) {
+              const productNameElement = productContainer.querySelector('h2'); // Select the h2 element
+              if (productNameElement) {
+                  const productName = productNameElement.textContent;
+                  // Show the order form with the product name
+                  showOrderForm(productName);
+              } else {
+                  console.error('Product name element (h2) not found.');
+              }
+          } else {
+              console.error('Product container element not found.');
+          }
+      });
+  });
+
+
+
+  function closeOrderForm() {
     const orderForm = document.querySelector('.order-form');
-    const orderFormProductName = orderForm.querySelector('.order-form-product-name');
-
-    // Function to show the order form with product name
-    function showOrderForm(productName) {
-        orderFormProductName.textContent = productName;
-        orderForm.style.display = 'flex'; // Show the form
+    if (orderForm) {
+        orderForm.style.display = 'none';
+    } else {
+        console.error('Order form not found.');
     }
+}
 
-    // Attach click event to each 'Buy Now' button
-    buyNowButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Find the closest product container to get the product name
-            const productContainer = button.closest('.product');
-            
-            if (productContainer) {
-                const productNameElement = productContainer.querySelector('h2'); // Select the h2 element
-                if (productNameElement) {
-                    const productName = productNameElement.textContent;
-                    // Show the order form with the product name
-                    showOrderForm(productName);
-                } else {
-                    console.error('Product name element (h2) not found.');
-                }
-            } else {
-                console.error('Product container element not found.');
-            }
-        });
-    });
+// Attach the event listener to the button
+const closeOrderButton = document.getElementById('closeOrderForm');
+if (closeOrderButton) {
+    closeOrderButton.addEventListener('click', closeOrderForm);
+} else {
+    console.error('Close Order Form button not found.');
+}
 });
-
-
+  
 
 let pricePerUnit = 100;  // You can adjust the price per unit here
 
 function calculateTotal() {
-    const quantity = document.getElementById('quantity').value;
-    const total = pricePerUnit * quantity;
-    document.getElementById('totalPrice').textContent = `$${total.toFixed(2)}`;
+  const quantity = document.getElementById('quantity').value;
+  const total = pricePerUnit * quantity;
+  document.getElementById('totalPrice').textContent = `$${total.toFixed(2)}`;
 }
 
 function showSecondForm() {
-    document.getElementById('form1').classList.add('hidden');
-    document.getElementById('form2').classList.remove('hidden');
+  // Prevent form submission
+  event.preventDefault();
+
+  document.getElementById('form1').classList.add('hidden');
+  document.getElementById('form2').classList.remove('hidden');
 }
 
-function submitOrder() {
-    const productName = document.getElementById('productName').value;
-    const quantity = document.getElementById('quantity').value;
-    const city = document.getElementById('city').value;
-    const street = document.getElementById('street').value;
-    const phone = document.getElementById('phone').value;
-    const coupon = document.getElementById('coupon').value;
-    const paymentMode = document.getElementById('paymentMode').value;
-    const deliveryTime = document.getElementById('deliveryTime').value;
+// function submitOrder() {
+//   const productName = document.getElementById('productName').value;
+//   const quantity = document.getElementById('quantity').value;
+//   const city = document.getElementById('city').value;
+//   const street = document.getElementById('street').value;
+//   const phone = document.getElementById('phone').value;
+//   const coupon = document.getElementById('coupon').value;
+//   const paymentMode = document.getElementById('paymentMode').value;
+//   const deliveryTime = document.getElementById('deliveryTime').value;
 
-    alert(`Order Submitted!
-        Product: ${productName}
-        Quantity: ${quantity}
-        Address: ${street}, ${city}
-        Phone: ${phone}
-        Coupon: ${coupon}
-        Payment Mode: ${paymentMode}
-        Delivery Time: ${deliveryTime}`);
-}
+//   alert(`Order Submitted!
+//       Product: ${productName}
+//       Quantity: ${quantity}
+//       Address: ${street}, ${city}
+//       Phone: ${phone}
+//       Coupon: ${coupon}
+//       Payment Mode: ${paymentMode}
+//       Delivery Time: ${deliveryTime}`);
+// }
+
+
 
 // Order form ends
 
